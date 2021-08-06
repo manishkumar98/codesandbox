@@ -16,5 +16,11 @@ document.getElementById("root").appendChild(h1);*/
 //ReactDOM.render(<div><h1>Hi Manish</h1><h1>Hi rajat</h1></div>,document.getElementById('root'));
 //ReactDOM.render([<h1>Manish</h1>,<h1>Rajat</h1>],document.getElementById('root'));
 
-var arr = [<h1>manish</h1>, <h2>rajat</h2>, <h3>astu</h3>];
-ReactDOM.render(arr, document.getElementById("root"));
+//var arr = [<h1>manish</h1>, <h2>rajat</h2>, <h3>astu</h3>];
+//ReactDOM.render(arr, document.getElementById("root"));
+ReactDOM.render(
+  <React.Fragment>
+    <h1>Manish</h1>,<h1>Rajat</h1>
+  </React.Fragment>,
+  document.getElementById("root")
+);
