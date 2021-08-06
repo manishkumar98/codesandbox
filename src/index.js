@@ -1,11 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-var name = "Manish";
+const fname = "Manish";
+const lname = "Kumar";
+
 ReactDOM.render(
   <>
-    <p>Hi there, {name}</p>
-    <p>{3 + 4}</p>
-    <p>{Math.random()}</p>
+    <h1>
+      Hi my name is {fname} {lname} .
+    </h1>
+    <h1>My name is {fname + " " + lname}.</h1>
+    <h1>{`My name is ${fname} ${lname}`}</h1>
   </>,
   document.getElementById("root")
 );
