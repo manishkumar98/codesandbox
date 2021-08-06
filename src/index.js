@@ -1,17 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
+var name = "Manish";
 ReactDOM.render(
   <>
-    <h1>List here</h1>
-    <p>Movie List</p>
-    <ol>
-      <li>No where</li>
-      <li>No guys</li>
-      <li>No girls</li>
-      <li>No out</li>
-      <li>No where</li>
-      <li>No where</li>
-    </ol>
+    <p>Hi there, {name}</p>
+    <p>{3 + 4}</p>
+    <p>{Math.random()}</p>
   </>,
   document.getElementById("root")
 );
