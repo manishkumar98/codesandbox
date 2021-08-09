@@ -1,20 +1,23 @@
-//var React=require('react')
 import React from "react";
 import ReactDOM from "react-dom";
-//'var ReactDOM=require('react-dom');
-//html jaisa dikhne wala jsx
-//ReactDOM.render(kya,kahan,callback)
-//Bable inside the scene
-/*ReactDOM.render(
-  React.createElement("h1", null, "Hi There"),
+import "./styles.css";
+const name = "Manish";
+const img1 = "https://picsum.photos/200/300";
+const img2 = "https://picsum.photos/200/300";
+const img3 = "https://picsum.photos/200/300";
+const img4 = "https://picsum.photos/200/300";
+const link = "https://www.google.com";
+ReactDOM.render(
+  <>
+    <h1 className="heading">My name is {name}</h1>
+    <div className="img_div">
+      <img src={img1} alt="Random image" />
+      <img src={img2} alt="Random image" />
+      <img src={img3} alt="Random image" />
+      <a href={link} target="_blank">
+        <img src={img4} alt="Random image" />
+      </a>
+    </div>
+  </>,
   document.getElementById("root")
-);*/
-/*var h1 = document.createElement("h1");
-h1.innerHTML = "Manish Kumar";
-document.getElementById("root").appendChild(h1);*/
-//ReactDOM.render(<><h1>Hi Manish</h1><h1>Hi rajat</h1></>,document.getElementById('root'));
-//ReactDOM.render(<div><h1>Hi Manish</h1><h1>Hi rajat</h1></div>,document.getElementById('root'));
-//ReactDOM.render([<h1>Manish</h1>,<h1>Rajat</h1>],document.getElementById('root'));
-
-var arr = [<h1>manish</h1>, <h2>rajat</h2>, <h3>astu</h3>];
-ReactDOM.render(arr, document.getElementById("root"));
+);
