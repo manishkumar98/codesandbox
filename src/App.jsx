@@ -1,14 +1,11 @@
-import Heading from "./Heading";
-import List from "./List";
-import Para from "./Para";
-
-function App() {
-  return (
-    <>
-      <Heading />
-      <Para />
-      <List />
-    </>
-  );
+const youtuber = "xyz";
+function name() {
+  let names = "Alpha";
+  return names;
 }
-export default App;
+function name2() {
+  let names2 = "Alpha2";
+  return names2;
+}
+export default youtuber;
+export { name, name2 };
