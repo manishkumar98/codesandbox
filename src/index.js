@@ -1,13 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { Addition, Subtraction } from "./Addition";
 import youtuber, { name, name2 } from "./App";
 ReactDOM.render(
   <>
     <ol>
-      <li>MAnish</li>
-      <li>{youtuber}</li>
-      <li>{name()}</li>
-      <li>{name2()}</li>
+      <li>{Addition(1, 2)}</li>
+      <li>{Subtraction(2, 4)}</li>
     </ol>
   </>,
   document.getElementById("root")
